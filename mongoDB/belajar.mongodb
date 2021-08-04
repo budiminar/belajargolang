@@ -1,0 +1,16 @@
+use admin;
+db.createUser(
+    {
+        user : "mongoadmin",
+        pwd : "masukaja",
+        roles : [
+            {
+                role : 'userAdmin',
+                db : "admin"
+            },
+            "readWrite"
+        ]
+    }
+)
+
+db;
